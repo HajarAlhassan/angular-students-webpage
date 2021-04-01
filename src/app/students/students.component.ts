@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from '../student';
-
 import { STUDENTS } from '../mock-students';
 
 @Component({
@@ -11,10 +10,12 @@ import { STUDENTS } from '../mock-students';
 export class StudentsComponent implements OnInit {
   students = STUDENTS;
   selectedStudent?: Student;
+ 
   constructor() { }
-
+ 
   ngOnInit(): void {
   }
+ 
   onSelect(student: Student): void {
     this.selectedStudent = student;
   }
