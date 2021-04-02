@@ -1,4 +1,8 @@
-<app-navBar></app-navBar>
 <h1>{{title}}</h1>
-<app-students></app-students>
+<nav>
+    <a routerLink="/homepage">Homepage</a>
+    <a routerLink="/students">Students</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
 <app-footer></app-footer>
